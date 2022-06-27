@@ -1,31 +1,13 @@
 //
-//  CodableBundleExtension.swift
+//  Connection.swift
 //  CS Demo
 //
-//  Created by Oliver Jansta on 23.06.2022.
+//  Created by Oliver Jansta on 27.06.2022.
 //
 
 import Foundation
 
-extension Bundle {
-    func decode<T: Codable>(_ file: String) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Failed to locate \(file) in bundle")
-        }
-        
-        guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to load \(file) from bundle.")
-        }
-        
-        let decoder = JSONDecoder()
-        
-        guard let loaded = try? decoder.decode(T.self, from: data) else {
-            fatalError("Failed to decode \(file) from bundle.")
-        }
-        
-        return loaded
-    }
-    
+class Connection {
     func loadAccounts() {
         let url = URL(string: "https://webapi.developers.erstegroup.com/api/csas/public/sandbox/v3/transparentAccounts/?page=&size=&filter=")!
         var request = URLRequest(url: url)
@@ -67,4 +49,6 @@ extension Bundle {
 
         task.resume()
     }
+    
+    
 }
