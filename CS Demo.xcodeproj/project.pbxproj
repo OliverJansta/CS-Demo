@@ -23,6 +23,7 @@
 		E69467822869F86000B22C76 /* AccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69467812869F86000B22C76 /* AccountDetail.swift */; };
 		E6946785286A0B3800B22C76 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6946784286A0B3800B22C76 /* Connection.swift */; };
 		E6946787286A162600B22C76 /* AccountDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6946786286A162600B22C76 /* AccountDetailRowView.swift */; };
+		E6946789286A2D1800B22C76 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6946788286A2D1800B22C76 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		E69467812869F86000B22C76 /* AccountDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetail.swift; sourceTree = "<group>"; };
 		E6946784286A0B3800B22C76 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		E6946786286A162600B22C76 /* AccountDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailRowView.swift; sourceTree = "<group>"; };
+		E6946788286A2D1800B22C76 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				E694676D286496D500B22C76 /* Account.swift */,
 				E69467812869F86000B22C76 /* AccountDetail.swift */,
+				E6946788286A2D1800B22C76 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				E69467822869F86000B22C76 /* AccountDetail.swift in Sources */,
 				E694676E286496D500B22C76 /* Account.swift in Sources */,
 				E694675B28648EFF00B22C76 /* CS_DemoApp.swift in Sources */,
+				E6946789286A2D1800B22C76 /* Response.swift in Sources */,
 				E694676C2864952100B22C76 /* CodableBundleExtension.swift in Sources */,
 				E694677B2869C4EB00B22C76 /* DeadEndView.swift in Sources */,
 				E694677D2869C53800B22C76 /* AccountDetailView.swift in Sources */,

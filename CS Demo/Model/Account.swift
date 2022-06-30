@@ -7,15 +7,16 @@
 
 import Foundation
 
-struct Account: Codable {
+struct Account: Codable, Identifiable {
     let accountNumber: String
-    let bankCode: Int
-    let transparencyFrom: String
-    let transparencyTo: String
-    let publicationTo: String
-    let actualizationDate: String
+    let bankCode: String
+    let transparencyFrom: String?
+    let transparencyTo: String?
+    let publicationTo: String?
+    let actualizationDate: String?
     let balance: Float
-    let currency: String
+    let currency: String?
     let name: String
-    let iban: String
+    let iban: String?
+    let id = UUID()
 }
