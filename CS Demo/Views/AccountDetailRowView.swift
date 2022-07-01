@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct AccountDetailRowView: View {
-    var neco: Int = -245
+    var value: Float = -245
+    var date: String
+    var name: String
+    var accountNumber: String
+    var bankNumber: String
     
     var body: some View {
         VStack (alignment: .leading) {
             HStack {
-                Text("25.3.2021")
+                Text(date)
                 Spacer()
-                Text("\(neco) CZK")
-                    .foregroundColor((neco > 0) ? .black : .red)
+                Text("\(String(format: "%.2f", value)) CZK")
+                    .foregroundColor((value > 0) ? .black : .red)
             }
             .padding(.top, 5)
             .padding(.horizontal)
-            Text("Jmeno Prijmeni")
+            Text(name)
                 .padding(.horizontal)
-            Text("978689-0896876/0800")
+            Text("\(accountNumber)/\(bankNumber)")
                 .padding(.horizontal)
             Divider()
         }
@@ -31,6 +35,6 @@ struct AccountDetailRowView: View {
 
 struct AccountDetailRowView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountDetailRowView()
+        AccountDetailRowView(date: "24.3.2021", name: "Petr Ponocný", accountNumber: "987689-12986778", bankNumber: "0800")
     }
 }

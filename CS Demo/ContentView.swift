@@ -14,7 +14,12 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 ForEach(data.accounts) {account in
-                    NavigationLink(destination: AccountDetailView(accountNumber: account.accountNumber), label: {
+                    NavigationLink(destination: AccountDetailView(
+                        accountNumber: account.accountNumber,
+                        bankNumber: account.bankCode,
+                        name: account.name,
+                        balance: account.balance,
+                        currency: account.currency), label: {
                         
                         AccountRowView(name: account.name, accNumber: account.accountNumber, bankNumber: account.bankCode, balance: account.balance, currency: account.currency ?? "CZK")
                         
